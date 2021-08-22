@@ -1,0 +1,149 @@
+.socials__items {
+  margin-top: 20px;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+
+  & i {
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+  }
+
+  & i:before {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  & i:hover {
+    border-radius: 0;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.fa-facebook {
+  background: #3b5998;
+}
+
+.fa-twitter {
+  background: #00aced;
+}
+
+.fa-instagram {
+  background: #cb2027;
+}
+
+@mixin button-variant($color, $color-hover: #fff) {
+  color: white;
+  background-color: $color; // transparent is better?
+  border-color: $color;
+
+  &:hover {
+    background-color: lighten($color, 10%);
+  }
+
+  &:focus,
+  &.focus {
+    background-color: darken($color, 10%);
+  }
+
+  &.disabled,
+  &:disabled {
+    &:focus,
+    &.focus {
+      background-color: lighten($color, 20%);
+    }
+    &:hover {
+      background-color: lighten($color, 20%);
+    }
+  }
+}
+
+@mixin button-outline-variant($color, $color-hover: #fff) {
+  color: $color;
+  background-image: none;
+  background-color: white;
+  border-color: $color;
+
+  &:hover {
+    color: $color-hover;
+    background-color: $color;
+    border-color: $color;
+  }
+
+  &:focus,
+  &.focus {
+    color: $color-hover;
+    background-color: $color;
+    border-color: $color;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color-hover;
+    background-color: $color;
+    border-color: $color;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color-hover;
+      background-color: darken($color, 17%);
+      border-color: darken($color, 25%);
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    &:focus,
+    &.focus {
+      border-color: lighten($color, 20%);
+    }
+    &:hover {
+      border-color: lighten($color, 20%);
+    }
+  }
+}
+
+%btn {
+  padding: 10px;
+}
+
+.btn {
+  @extend %btn;
+
+  &--primary {
+    @extend %btn;
+    @include button-variant($primary-color);
+  }
+
+  &--secondary {
+    @extend %btn;
+    @include button-variant($secondary-color);
+  }
+
+  &--outline-primary {
+    @extend %btn;
+    @include button-outline-variant($primary-color);
+  }
+
+  &--outline-secondary {
+    @extend %btn;
+    @include button-outline-variant($secondary-color);
+  }
+
+  &--rounded {
+    border-radius: 10px;
+  }
+}

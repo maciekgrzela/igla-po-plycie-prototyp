@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Igłą po płycie - Blog vinylowy</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__hamburger hamburger">
+        <img src="/assets/img/logo_monochrome.png" alt="vinyl" />
+        <i data-feather="menu"></i>
+      </div>
+      <div class="header-mobile">
+        <div class="header__container">
+          <i data-feather="x" class="header__close"></i>
+          <nav aria-label="mobile" class="header__categories categories">
+            <ul class="categories__items">
+              <li class="categories__item categories__item--active">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/home.png"
+                    alt="home"
+                  />
+                  <h4>Strona Główna</h4>
+                </div>
+              </li>
+              <li class="categories__item">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/pop.png"
+                    alt="pop"
+                  />
+                  <h4>Top of the Pop</h4>
+                </div>
+                <span class="categories__posts-count">(6)</span>
+              </li>
+              <li class="categories__item">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/alternative.png"
+                    alt="alternative"
+                  />
+                  <h4>Alternatywny świat</h4>
+                </div>
+                <span class="categories__posts-count">(11)</span>
+              </li>
+              <li class="categories__item">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/speaker.png"
+                    alt="devices"
+                  />
+                  <h4>Vinylowy sprzęt grający</h4>
+                </div>
+                <span class="categories__posts-count">(7)</span>
+              </li>
+              <li class="categories__item">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/vinyl.png"
+                    alt="vinyl"
+                  />
+                  <h4>Pierwsze kroczki z vinylami</h4>
+                </div>
+                <span class="categories__posts-count">(5)</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__logo logo">
+            <div class="logo__container">
+              <img src="assets/img/logo.png" alt="Igłą po płycie" />
+              <span class="logo__title">IGŁĄ PO PŁYCIE</span>
+              <span class="logo__desc"
+                >czyli kilka ciekawych historii związanych z muzyką odtwarzaną z
+                czarnych płyt</span
+              >
+            </div>
+            <div class="header__socials socials">
+              <ul class="socials__items">
+                <li>
+                  <a href="https://facebook.com/"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/"
+                    ><i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__about about">
+            <div class="about__container">
+              <ul class="about__items">
+                <li class="about__item">Autor</li>
+                <li class="about__item">|</li>
+                <li class="about__item">Kontakt</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="wrapper__header header">
+        <div class="header__container">
+          <nav aria-label="desktop" class="header__categories categories">
+            <ul class="categories__items">
+              <li class="categories__item categories__item--active">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/home.png"
+                    alt="home"
+                  />
+                  <h4>Strona Główna</h4>
+                </div>
+              </li>
+              <li class="categories__item">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/quality.png"
+                    alt="pop"
+                  />
+                  <h4>Recenzje płyt</h4>
+                </div>
+                <span class="categories__posts-count">(6)</span>
+              </li>
+              <li class="categories__item">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/alternative.png"
+                    alt="alternative"
+                  />
+                  <h4>Vinylowe opowieści</h4>
+                </div>
+                <span class="categories__posts-count">(11)</span>
+              </li>
+              <li class="categories__item">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/speaker.png"
+                    alt="devices"
+                  />
+                  <h4>Vinylowy sprzęt grający</h4>
+                </div>
+                <span class="categories__posts-count">(7)</span>
+              </li>
+              <li class="categories__item">
+                <div class="categories__name">
+                  <img
+                    width="25"
+                    height="25"
+                    src="/assets/img/baby.png"
+                    alt="vinyl"
+                  />
+                  <h4>Pierwsze kroczki z vinylami</h4>
+                </div>
+                <span class="categories__posts-count">(5)</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__logo logo">
+            <div class="logo__container">
+              <img src="assets/img/logo.png" alt="Igłą po płycie" />
+              <span class="logo__title">IGŁĄ PO PŁYCIE</span>
+              <span class="logo__desc"
+                >czyli kilka autorskich historii związanych z muzyką odtwarzaną
+                z czarnych płyt</span
+              >
+            </div>
+            <div class="header__socials socials">
+              <ul class="socials__items">
+                <li>
+                  <a href="https://facebook.com/"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/"
+                    ><i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__about about">
+            <div class="about__container">
+              <ul class="about__items">
+                <li class="about__item">Autor</li>
+                <li class="about__item">|</li>
+                <li class="about__item">Kontakt</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="wrapper__main articles">
+        <h3 class="section-title mt-0">Wszystkie artykuły</h3>
+        <hr />
+        <article class="article">
+          <div class="article__image">
+            <img
+              src="https://picsum.photos/600/600?random=1"
+              alt="article-image"
+            />
+          </div>
+          <div class="article__content">
+            <h2 class="article__title">Tytuł artykułu jakiś</h2>
+            <ul class="article__info">
+              <li>
+                <i class="article__info-icon" data-feather="calendar"></i
+                ><span class="article__info-label">26 kwietnia 2021</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="bookmark"></i
+                ><span class="article__info-label">Muzyka rockowa</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="message-square"></i
+                ><span class="article__info-label">10 komentarzy</span>
+              </li>
+            </ul>
+            <p class="article__abbrev">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              possimus iusto eum odit obcaecati nam iste a saepe alias
+              quibusdam, ea, veritatis cumque enim? Facere quia accusamus sunt
+              itaque perferendis.Tempor laborum ullamco irure anim aute
+              excepteur aliqua. Sunt duis consequat fugiat esse. Sint sint quis
+              duis magna veniam mollit culpa. Proident enim ea cupidatat ut
+              dolore incididunt ea velit aute ad ut ex eu fugiat. Occaecat non
+              esse id in exercitation irure nostrud aliqua incididunt
+              adipisicing sit. Cillum velit commodo labore ullamco do voluptate.
+            </p>
+            <button class="btn--outline-secondary article__read-more">
+              <span class="mr-1">Czytaj dalej</span
+              ><i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <article class="article">
+          <div class="article__image">
+            <img
+              src="https://picsum.photos/600/600?random=1"
+              alt="article-image"
+            />
+          </div>
+          <div class="article__content">
+            <h2 class="article__title">Tytuł artykułu jakiś</h2>
+            <ul class="article__info">
+              <li>
+                <i class="article__info-icon" data-feather="calendar"></i
+                ><span class="article__info-label">26 kwietnia 2021</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="bookmark"></i
+                ><span class="article__info-label">Muzyka rockowa</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="message-square"></i
+                ><span class="article__info-label">10 komentarzy</span>
+              </li>
+            </ul>
+            <p class="article__abbrev">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              possimus iusto eum odit obcaecati nam iste a saepe alias
+              quibusdam, ea, veritatis cumque enim? Facere quia accusamus sunt
+              itaque perferendis.In laborum ea proident irure enim. Minim
+              exercitation laborum deserunt officia. Qui minim sit do deserunt
+              ullamco. Nulla eiusmod proident dolor cupidatat dolor officia in
+              velit dolor do do veniam non consequat.
+            </p>
+            <button class="btn--outline-secondary article__read-more">
+              <span class="mr-1">Czytaj dalej</span
+              ><i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <article class="article">
+          <div class="article__image">
+            <img
+              src="https://picsum.photos/600/600?random=1"
+              alt="article-image"
+            />
+          </div>
+          <div class="article__content">
+            <h2 class="article__title">Tytuł artykułu jakiś</h2>
+            <ul class="article__info">
+              <li>
+                <i class="article__info-icon" data-feather="calendar"></i
+                ><span class="article__info-label">26 kwietnia 2021</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="bookmark"></i
+                ><span class="article__info-label">Muzyka rockowa</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="message-square"></i
+                ><span class="article__info-label">10 komentarzy</span>
+              </li>
+            </ul>
+            <p class="article__abbrev">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              possimus iusto eum odit obcaecati nam iste a saepe alias
+              quibusdam, ea, veritatis cumque enim? Facere quia accusamus sunt
+              itaque perferendis.Do dolore cupidatat culpa laborum adipisicing
+              dolore non consequat non amet proident consequat. Ea et enim
+              consectetur aliquip eiusmod fugiat anim commodo non. Ex eu
+              excepteur elit exercitation ut amet reprehenderit. Ea amet minim
+              elit veniam non sint aute veniam ipsum.
+            </p>
+            <button class="btn--outline-secondary article__read-more">
+              <span class="mr-1">Czytaj dalej</span
+              ><i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <article class="article">
+          <div class="article__image">
+            <img
+              src="https://picsum.photos/600/600?random=1"
+              alt="article-image"
+            />
+          </div>
+          <div class="article__content">
+            <h2 class="article__title">Tytuł artykułu jakiś</h2>
+            <ul class="article__info">
+              <li>
+                <i class="article__info-icon" data-feather="calendar"></i
+                ><span class="article__info-label">26 kwietnia 2021</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="bookmark"></i
+                ><span class="article__info-label">Muzyka rockowa</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="message-square"></i
+                ><span class="article__info-label">10 komentarzy</span>
+              </li>
+            </ul>
+            <p class="article__abbrev">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              possimus iusto eum odit obcaecati nam iste a saepe alias
+              quibusdam, ea, veritatis cumque enim? Facere quia accusamus sunt
+              itaque perferendis.Occaecat do sit laborum non officia velit ex ea
+              magna veniam culpa velit. Nostrud nulla commodo cupidatat qui
+              proident cupidatat amet elit ad ipsum nostrud id dolor cupidatat.
+              Magna ex ex ipsum veniam ut consequat in nostrud culpa velit quis
+              sit. Pariatur tempor aliquip sit magna amet excepteur aliquip enim
+              Lorem. Non cillum ea sint cupidatat nostrud commodo aliqua eiusmod
+              dolore officia culpa ullamco ex.
+            </p>
+            <button class="btn--outline-secondary article__read-more">
+              <span class="mr-1">Czytaj dalej</span
+              ><i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <article class="article">
+          <div class="article__image">
+            <img
+              src="https://picsum.photos/600/600?random=1"
+              alt="article-image"
+            />
+          </div>
+          <div class="article__content">
+            <h2 class="article__title">Tytuł artykułu jakiś</h2>
+            <ul class="article__info">
+              <li>
+                <i class="article__info-icon" data-feather="calendar"></i
+                ><span class="article__info-label">26 kwietnia 2021</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="bookmark"></i
+                ><span class="article__info-label">Muzyka rockowa</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="message-square"></i
+                ><span class="article__info-label">10 komentarzy</span>
+              </li>
+            </ul>
+            <p class="article__abbrev">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              possimus iusto eum odit obcaecati nam iste a saepe alias
+              quibusdam, ea, veritatis cumque enim? Facere quia accusamus sunt
+              itaque perferendis.Incididunt est ut id fugiat. Commodo ullamco
+              officia incididunt labore ad. Proident amet consequat veniam amet
+              eiusmod amet et. Officia ipsum aliquip cillum labore adipisicing
+              reprehenderit aute.
+            </p>
+            <button class="btn--outline-secondary article__read-more">
+              <span class="mr-1">Czytaj dalej</span
+              ><i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <article class="article">
+          <div class="article__image">
+            <img
+              src="https://picsum.photos/600/600?random=1"
+              alt="article-image"
+            />
+          </div>
+          <div class="article__content">
+            <h2 class="article__title">Tytuł artykułu jakiś</h2>
+            <ul class="article__info">
+              <li>
+                <i class="article__info-icon" data-feather="calendar"></i
+                ><span class="article__info-label">26 kwietnia 2021</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="bookmark"></i
+                ><span class="article__info-label">Muzyka rockowa</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="message-square"></i
+                ><span class="article__info-label">10 komentarzy</span>
+              </li>
+            </ul>
+            <p class="article__abbrev">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              possimus iusto eum odit obcaecati nam iste a saepe alias
+              quibusdam, ea, veritatis cumque enim? Facere quia accusamus sunt
+              itaque perferendis.Esse reprehenderit deserunt mollit elit fugiat
+              dolor ipsum exercitation. Ipsum ea tempor cillum velit aliquip
+              voluptate amet. Et laborum quis cupidatat cupidatat. Ut aliquip
+              enim deserunt magna est magna incididunt officia nisi irure
+              aliquip. Elit sit cupidatat exercitation et sunt ex laborum in
+              commodo consequat ullamco dolor in reprehenderit.
+            </p>
+            <button class="btn--outline-secondary article__read-more">
+              <span class="mr-1">Czytaj dalej</span
+              ><i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <article class="article">
+          <div class="article__image">
+            <img
+              src="https://picsum.photos/600/600?random=1"
+              alt="article-image"
+            />
+          </div>
+          <div class="article__content">
+            <h2 class="article__title">Tytuł artykułu jakiś</h2>
+            <ul class="article__info">
+              <li>
+                <i class="article__info-icon" data-feather="calendar"></i
+                ><span class="article__info-label">26 kwietnia 2021</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="bookmark"></i
+                ><span class="article__info-label">Muzyka rockowa</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="message-square"></i
+                ><span class="article__info-label">10 komentarzy</span>
+              </li>
+            </ul>
+            <p class="article__abbrev">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              possimus iusto eum odit obcaecati nam iste a saepe alias
+              quibusdam, ea, veritatis cumque enim? Facere quia accusamus sunt
+              itaque perferendis.Ad nulla excepteur pariatur non et excepteur
+              adipisicing eiusmod labore adipisicing. Sunt ipsum pariatur tempor
+              aliqua. Amet minim sit quis dolore laboris aliqua aute excepteur
+              qui incididunt labore.
+            </p>
+            <button class="btn--outline-secondary article__read-more">
+              <span class="mr-1">Czytaj dalej</span
+              ><i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+        <article class="article">
+          <div class="article__image">
+            <img
+              src="https://picsum.photos/600/600?random=1"
+              alt="article-image"
+            />
+          </div>
+          <div class="article__content">
+            <h2 class="article__title">Tytuł artykułu jakiś</h2>
+            <ul class="article__info">
+              <li>
+                <i class="article__info-icon" data-feather="calendar"></i
+                ><span class="article__info-label">26 kwietnia 2021</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="bookmark"></i
+                ><span class="article__info-label">Muzyka rockowa</span>
+              </li>
+              <li>
+                <i class="article__info-icon" data-feather="message-square"></i
+                ><span class="article__info-label">10 komentarzy</span>
+              </li>
+            </ul>
+            <p class="article__abbrev">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              possimus iusto eum odit obcaecati nam iste a saepe alias
+              quibusdam, ea, veritatis cumque enim? Facere quia accusamus sunt
+              itaque perferendis.Esse velit pariatur cupidatat excepteur duis
+              ullamco veniam. Magna ad commodo ullamco excepteur occaecat id
+              voluptate commodo ad. Tempor velit et velit consectetur. Irure ex
+              irure sunt veniam ipsum ad laborum ex esse dolor. Adipisicing
+              culpa pariatur ad do reprehenderit nostrud ex Lorem non. Nostrud
+              fugiat enim id amet nulla mollit reprehenderit.
+            </p>
+            <button class="btn--outline-secondary article__read-more">
+              <span class="mr-1">Czytaj dalej</span
+              ><i data-feather="arrow-right"></i>
+            </button>
+          </div>
+        </article>
+      </main>
+      <aside class="wrapper__aside aside">
+        <section class="search">
+          <input
+            name="search__input"
+            class="search__input"
+            type="text"
+            placeholder="Wyszukaj artykuł..."
+          />
+          <button class="btn--secondary">
+            <i data-feather="search"></i>
+          </button>
+        </section>
+        <section class="tags-cloud">
+          <h3 class="section-title">Chmura tagów</h3>
+          <hr />
+          <div class="tags-cloud__items">
+            <button class="tags-cloud__item btn--outline-secondary">
+              Rock
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">Pop</button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Country
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Blues
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Vinyle
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Sprzęt grający
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Stara muzyka
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Alternatywa
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Wzmacniacze
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Lata '70 te
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Lata '80 te
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Lata '90 te
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Hard Rock
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Rock and Roll
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Nowa fala
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Klasyki
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Świeże podejście
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">Pop</button>
+            <button class="tags-cloud__item btn--outline-secondary">LP</button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Single
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Wydania specjalne
+            </button>
+            <button class="tags-cloud__item btn--outline-secondary">
+              Rosnąca popularność
+            </button>
+          </div>
+        </section>
+        <section class="author">
+          <h3 class="section-title mt-0">O Autorze</h3>
+          <hr />
+          <div class="author__img-container">
+            <img
+              class="author__img"
+              src="/assets/img/author.jpg"
+              alt="Author"
+            />
+          </div>
+          <p class="author__about">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+            distinctio dolorum labore ex odit facilis provident, repudiandae in
+            sit et perferendis libero, molestias, aut repellendus necessitatibus
+            ratione rerum voluptatem eligendi!Officia in aliquip aute qui ex
+            reprehenderit voluptate deserunt eu elit esse. Sit non proident non
+            officia. Est reprehenderit irure sunt proident ut. Velit proident
+            ullamco magna aute mollit enim elit. Reprehenderit veniam do
+            deserunt Lorem commodo aliquip sint duis nulla ut ut aute sunt.
+            Veniam occaecat proident exercitation sunt pariatur sit incididunt.
+          </p>
+        </section>
+        <section class="trending-articles">
+          <h3 class="section-title">Popularne artykuły</h3>
+          <hr />
+          <div class="articles">
+            <article class="article article--mini">
+              <div class="article__image">
+                <img
+                  src="https://picsum.photos/seed/600/600"
+                  alt="article-image"
+                />
+              </div>
+              <div class="article__content">
+                <h2 class="article__title">Tytuł artykułu jakiś</h2>
+                <ul class="article__info article__info--stack">
+                  <li>
+                    <i class="article__info-icon" data-feather="calendar"></i>26
+                    kwietnia 2021
+                  </li>
+                  <li>
+                    <i class="article__info-icon" data-feather="bookmark"></i
+                    >Muzyka rockowa
+                  </li>
+                  <li>
+                    <i
+                      class="article__info-icon"
+                      data-feather="message-square"
+                    ></i
+                    >10 komentarzy
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="article article--mini">
+              <div class="article__image">
+                <img
+                  src="https://picsum.photos/seed/600/600"
+                  alt="article-image"
+                />
+              </div>
+              <div class="article__content">
+                <h2 class="article__title">Tytuł artykułu jakiś</h2>
+                <ul class="article__info article__info--stack">
+                  <li>
+                    <i class="article__info-icon" data-feather="calendar"></i>26
+                    kwietnia 2021
+                  </li>
+                  <li>
+                    <i class="article__info-icon" data-feather="bookmark"></i
+                    >Muzyka rockowa
+                  </li>
+                  <li>
+                    <i
+                      class="article__info-icon"
+                      data-feather="message-square"
+                    ></i
+                    >10 komentarzy
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="article article--mini">
+              <div class="article__image">
+                <img
+                  src="https://picsum.photos/seed/600/600"
+                  alt="article-image"
+                />
+              </div>
+              <div class="article__content">
+                <h2 class="article__title">Tytuł artykułu jakiś</h2>
+                <ul class="article__info article__info--stack">
+                  <li>
+                    <i class="article__info-icon" data-feather="calendar"></i>26
+                    kwietnia 2021
+                  </li>
+                  <li>
+                    <i class="article__info-icon" data-feather="bookmark"></i
+                    >Muzyka rockowa
+                  </li>
+                  <li>
+                    <i
+                      class="article__info-icon"
+                      data-feather="message-square"
+                    ></i
+                    >10 komentarzy
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="archive">
+          <h3 class="section-title">Archiwum</h3>
+          <hr />
+          <ul class="archive__items">
+            <li class="archive__item">
+              <span>Kwiecień 2021</span><span>(10)</span>
+            </li>
+            <li class="archive__item">
+              <span>Marzec 2021</span><span>(6)</span>
+            </li>
+            <li class="archive__item">
+              <span>Luty 2021</span><span>(3)</span>
+            </li>
+            <li class="archive__item">
+              <span>Styczeń 2021</span><span>(11)</span>
+            </li>
+            <li class="archive__item">
+              <span>Grudzień 2020</span><span>(4)</span>
+            </li>
+          </ul>
+        </section>
+        <section class="notify">
+          <h3 class="section-title">Powiadom mnie!</h3>
+          <hr />
+          <p class="notify__about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur atque minima, tempora perspiciatis ratione harum ea!
+            Voluptatum, nemo distinctio in aliquid deleniti nostrum voluptate,
+            quis, voluptas facere cum eligendi autem.
+          </p>
+          <form class="notify__form">
+            <input
+              type="email"
+              name="email"
+              class="notify__input"
+              placeholder="Wprowadź adres e-mail"
+            />
+            <button type="submit" class="notify__send btn--secondary">
+              <i data-feather="send"></i>
+            </button>
+          </form>
+        </section>
+      </aside>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
